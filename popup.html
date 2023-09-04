@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UMS Auto Login</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading1">
+        <h2>UMS Auto Login</h2>
+      </div>
+    </div>
+
+    <div id="main">
+      <h4 class="heading">SIGN IN</h4>
+      <form id="form">
+        <div class="form-group">
+          <input type="text" name="userid" class="form-control form-control-sm" id="textbtn" placeholder="Registration No" autofocus/>
+        </div>
+        <div class="form-group">
+          <input type="password" name="passid" class="form-control form-control-sm" id="passbtn" placeholder="Password"/>
+        </div>
+        <div class="checkbox-container">
+          <div class="form-check">
+            <input class="form-check-input form-control-sm" type="checkbox" id="check"/>
+            <label class="form-check-label label" for="check">Save Registration Number</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input form-control-sm" type="checkbox" id="checkfuture"/>
+            <label class="form-check-label label" for="checkfuture">Save Password (Hidden)</label>
+          </div>
+        </div>
+        <p id="alertp"></p>
+        <input type="button" id="loginbtn" value="Save"/>
+      </form>
+
+      <div>
+        <p class="credits-text">Designed and Developed by Mani Ravirala</p>
+      </div>
+    </div>
+  </body>
+</html>

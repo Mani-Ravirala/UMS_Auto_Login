@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "UMS Auto Login",
+  "version": "1.0",
+  "description": "Auto Login in UMS with last saved credentials",
+  "permissions": ["activeTab", "webNavigation", "tabs", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.lpu.in/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  }
+}
