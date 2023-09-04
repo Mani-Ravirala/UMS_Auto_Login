@@ -54,4 +54,4 @@ if (loginButton) {
   runExtension();
 }
 
-chrome.storage.sync.get(["userId", "pass"], function (get) {});
+// chrome.storage.sync.get(["userId", "pass"], function (get) {});
