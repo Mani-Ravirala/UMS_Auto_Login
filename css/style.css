@@ -127,4 +127,11 @@ body {
    .button:active {
     filter: brightness(.8);
    }
+
+   .enable-check{
+    display: flex;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    align-items: center;
+   }
    

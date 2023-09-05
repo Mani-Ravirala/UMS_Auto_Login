@@ -1,6 +1,8 @@
 $(document).ready(function () {
     var userIdField = document.getElementById("check");
     var savePassField = document.getElementById("checkfuture");
+    var enableField = document.getElementById("enable");
+    
     chrome.storage.sync.get(["saveUserId"], function (get) {
         if (get.saveUserId == true) {
             userIdField.checked = true;
@@ -22,11 +24,20 @@ $(document).ready(function () {
             savePassField.checked = false;
         }
     });
+
+    chrome.storage.sync.get(["enable"], function (get) {
+        if (get.enable == true) {
+            enableField.checked = true;
+        } else if (get.saveUserId == false) {
+            enableField.checked = false;
+        }
+    });
 });
 
 $(function () {
     var userIdField = document.getElementById("check");
     var savePassField = document.getElementById("checkfuture");
+    var enableField = document.getElementById("enable");
     var alertp = document.getElementById("alertp")
     $("#loginbtn").click(function () {
         var name = $("#textbtn").val();
@@ -38,6 +49,7 @@ $(function () {
             chrome.storage.sync.set({ pass: pass });
             chrome.storage.sync.set({ saveUserId: userIdField.checked });
             chrome.storage.sync.set({ savePassword: savePassField.checked });
+            chrome.storage.sync.set({ enable: enableField.checked });
             window.close();
         }
     });
