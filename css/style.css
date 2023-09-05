@@ -35,8 +35,7 @@ body {
 
 .label {
     text-align: center;
-    font-weight: bold;
-    padding-left: 8px
+    font-weight: 500;
 }
 
 .btn {
@@ -50,15 +49,15 @@ body {
 }
 
 #check {
-    width: 20px;
+    width: 15px;
     vertical-align: middle;
-    height: 20px;
+    height: 15px;
 }
 
 #checkfuture {
-    width: 20px;
+    width: 15px;
     vertical-align: middle;
-    height: 20px;
+    height: 15px;
 }
 
 #loginbtn {
@@ -135,3 +134,8 @@ body {
     align-items: center;
    }
    
+   #enable{
+    width: 15px;
+    vertical-align: middle;
+    height: 15px;
+   }
