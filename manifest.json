@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "UMS Auto Login",
-  "version": "1.0",
+  "version": "2.0",
   "description": "Auto Login in UMS with last saved credentials",
   "permissions": ["activeTab", "webNavigation", "tabs", "storage"],
   "background": {

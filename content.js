@@ -1,6 +1,7 @@
 var user = document.getElementById("txtU");
 var pass = document.getElementById("TxtpwdAutoId_8767");
-var loginButton = document.getElementById("iBtnLogins");
+// var loginButton = document.getElementById("iBtnLogins");
+var loginButton = document.querySelector("input[type='submit']");
 var loginDiv = document.querySelector(".login_button");
 var username, password;
 
